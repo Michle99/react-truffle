@@ -1,0 +1,42 @@
+(await box.retrieve()).toString();
+await box.increment();
+const box = await BoxV2.attach('0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9');
+const BoxV2 = await ethers.getContractFactory('BoxV2');
+(await box.retrieve()).toString();
+await box.increment();
+await.increment();
+const box = await BoxV2.attach('0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9');
+const BoxV2 = await ethers.getContractFactory('BoxV2');
+const box = await BoxV2.attach('0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9');
+const BoxV2 = await ethers.getContractFactory('BoxV2');
+const box = await BoxV2.attach('0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9');
+const Box = await ethers.getContractFactory('BoxV2');
+(await box.retrieve()).toString();
+const box = await Box.attach('0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9');
+const Box = await ethers.getContractFactory('Box');
+(await box.retrieve()).toString()
+await box.store(42);
+const box = await Box.attach('0x5FbDB2315678afecb367f032d93F642f64180aa3');
+const Box = await ethers.getContractFactory('Box');
+await box.store(42);
+const box = await Box.attach('0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0');
+const Box = await ethers.getContractFactory('Box');
+(await ethers.provider.getBalance(accounts[1])).toString()
+(await ethers.provider.getBalance(accounts[0])).toString()
+accounts = await ethers.provider.listAccounts()
+(await box.retrieve()).toString()
+await box.retrieve()
+await box.store(42);
+const box = await Box.attach('0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0');
+const Box = await ethers.getContractFactory('Box');
+await box.retrieve()
+await box.store(42);
+(await box.retrieve()).toString()
+await box.store(42);
+const box = await Box.attach('0x5FbDB2315678afecb367f032d93F642f64180aa3');
+const Box = await ethers.getContractFactory('Box');
+(await box.retrieve()).toString()
+await box.retrieve()
+await box.store(42);
+const box = await Box.attach('0x5FbDB2315678afecb367f032d93F642f64180aa3');
+const Box = await ethers.getContractFactory('Box');

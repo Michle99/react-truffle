@@ -1,0 +1,583 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "Initializable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:35",
+        "inherit": [],
+        "libraries": [
+          "AddressUpgradeable"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "AddressUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\AddressUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "0b9b2170b001abe2c276a935aca841917a827517e35af9d69133b20a9ff04635",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "AdminBox": {
+        "src": "contracts\\AdminBox.sol:7",
+        "version": {
+          "withMetadata": "5952ee9675889520b980c4afb8b4b4ce9b6b96ba3715e168dcd1cb247900c36a",
+          "withoutMetadata": "d4353407728270bbf942425865ef853a9f5fd1dd67fadb9fd9ed53e8f8c8f492",
+          "linkedWithoutMetadata": "d4353407728270bbf942425865ef853a9f5fd1dd67fadb9fd9ed53e8f8c8f492"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address)",
+          "()",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+            },
+            {
+              "label": "_value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "AdminBox",
+              "src": "contracts\\AdminBox.sol:8"
+            },
+            {
+              "label": "_admin",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_address",
+              "contract": "AdminBox",
+              "src": "contracts\\AdminBox.sol:9"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "Box": {
+        "src": "contracts\\Box.sol:9",
+        "version": {
+          "withMetadata": "ab06135ac1da089f7bd531cc2e823e6643fa29346b0e2e949a3fb3ea2185836d",
+          "withoutMetadata": "925ac28bbf9839bef9f86ec5b41ec3785d913ce448340c01b8751ecba4a82e6f",
+          "linkedWithoutMetadata": "925ac28bbf9839bef9f86ec5b41ec3785d913ce448340c01b8751ecba4a82e6f"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts\\Box.sol:10"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "BoxV2": {
+        "src": "contracts\\BoxV2.sol:6",
+        "version": {
+          "withMetadata": "8f8976c33f785bc52ac7cb6ac294c28be7967dfc6d84376d579368b71bd049c6",
+          "withoutMetadata": "01c3ba37320016517cdb11c3854419e58447d3987ca7ee58cc7d8498e0984ab2",
+          "linkedWithoutMetadata": "01c3ba37320016517cdb11c3854419e58447d3987ca7ee58cc7d8498e0984ab2"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()",
+          "increment()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts\\BoxV2.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "Migrations": {
+        "src": "contracts\\Migrations.sol:4",
+        "version": {
+          "withMetadata": "d5de1871b1f58d18a9eb0439045c62d9f217e3c52597ec79c84f68090e79c498",
+          "withoutMetadata": "5e6a57155b1e405aba73a652c86dc6c2d999352973747f9f7f735671bc00e3e6",
+          "linkedWithoutMetadata": "5e6a57155b1e405aba73a652c86dc6c2d999352973747f9f7f735671bc00e3e6"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "setCompleted(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "owner",
+            "src": "contracts\\Migrations.sol:5"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Migrations",
+              "src": "contracts\\Migrations.sol:5"
+            },
+            {
+              "label": "last_completed_migration",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Migrations",
+              "src": "contracts\\Migrations.sol:6"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "Auth": {
+        "src": "contracts\\access-control\\Auth.sol:6",
+        "version": {
+          "withMetadata": "fca210896618b9020fb21f6e75cf691126a2663ac328a3575c5b7b1ed045cfdc",
+          "withoutMetadata": "7bedf9ef352669451eb92edb03094aa26af16327f7aab3e7eac7e6362ee9e942",
+          "linkedWithoutMetadata": "7bedf9ef352669451eb92edb03094aa26af16327f7aab3e7eac7e6362ee9e942"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "isAdministrator(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Auth",
+            "src": "contracts\\access-control\\Auth.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_administrator",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Auth",
+              "src": "contracts\\access-control\\Auth.sol:7"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "BoxV2": {
+        "src": "contracts\\BoxV2.sol:6",
+        "version": {
+          "withMetadata": "607026993ef03bae34087ee2c6c12e2d0fc68bfe961b4793978f5e50e18dd02a",
+          "withoutMetadata": "01c3ba37320016517cdb11c3854419e58447d3987ca7ee58cc7d8498e0984ab2",
+          "linkedWithoutMetadata": "01c3ba37320016517cdb11c3854419e58447d3987ca7ee58cc7d8498e0984ab2"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()",
+          "increment()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts\\BoxV2.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Box": {
+        "src": "contracts\\Box.sol:9",
+        "version": {
+          "withMetadata": "11743673362876086d8df3ad2c3a2d49177baa9aa0492730208faa01e8dcf762",
+          "withoutMetadata": "925ac28bbf9839bef9f86ec5b41ec3785d913ce448340c01b8751ecba4a82e6f",
+          "linkedWithoutMetadata": "925ac28bbf9839bef9f86ec5b41ec3785d913ce448340c01b8751ecba4a82e6f"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts\\Box.sol:10"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Ownable": {
+        "src": "@openzeppelin\\contracts\\access\\Ownable.sol:20",
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin\\contracts\\access\\Ownable.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin\\contracts\\access\\Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "Context": {
+        "src": "@openzeppelin\\contracts\\utils\\Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Box": {
+        "src": "contracts\\Box.sol:9",
+        "version": {
+          "withMetadata": "88fa092dc2d3aa8bd6a7628cb1a508c23330ef9a7da7c6dd127c124cc4ba7720",
+          "withoutMetadata": "6df355eb6c5206cee5a0cd713ae4250a65784a09b7c0f4a75aa1f2cd9ec32996",
+          "linkedWithoutMetadata": "6df355eb6c5206cee5a0cd713ae4250a65784a09b7c0f4a75aa1f2cd9ec32996"
+        },
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin\\contracts\\access\\Ownable.sol:21"
+            },
+            {
+              "label": "_value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts\\Box.sol:10"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "Migrations": {
+        "src": "contracts\\Migrations.sol:4",
+        "version": {
+          "withMetadata": "8e14dd82aafcc1468ae46e8443b2ea7267fcb19412ff4a43e9e7e4ad1a92dbec",
+          "withoutMetadata": "992e7a0bd9ca864ba818a996e7e37b67c2d02b6b0a9e7a1ce83e97e873f711cf",
+          "linkedWithoutMetadata": "992e7a0bd9ca864ba818a996e7e37b67c2d02b6b0a9e7a1ce83e97e873f711cf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "setCompleted(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "owner",
+            "src": "contracts\\Migrations.sol:5"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Migrations",
+              "src": "contracts\\Migrations.sol:5"
+            },
+            {
+              "label": "last_completed_migration",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Migrations",
+              "src": "contracts\\Migrations.sol:6"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "Auth": {
+        "src": "contracts\\access-control\\Auth.sol:6",
+        "version": {
+          "withMetadata": "1a5af4bc91b5e0e48113a16ac21d7919991944d2b5cf23a0b7d1bd68e9da9731",
+          "withoutMetadata": "7bedf9ef352669451eb92edb03094aa26af16327f7aab3e7eac7e6362ee9e942",
+          "linkedWithoutMetadata": "7bedf9ef352669451eb92edb03094aa26af16327f7aab3e7eac7e6362ee9e942"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "isAdministrator(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Auth",
+            "src": "contracts\\access-control\\Auth.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_administrator",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Auth",
+              "src": "contracts\\access-control\\Auth.sol:7"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    }
+  ]
+}
